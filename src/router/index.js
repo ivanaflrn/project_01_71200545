@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import MakananView from '../views/MakananView.vue'
 import MinumanView from '../views/MinumanView.vue'
 import SnackView from '../views/SnackView.vue'
+import OpsiGigaMacView from '../views/OpsiGigaMacView.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/snack',
     name: 'Snack',
     component: SnackView
+  },
+  {
+    path: '/opsiGiga',
+    name: 'OpsiGigaMacView',
+    component: OpsiGigaMacView
   }
 ]
 

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div>Selamat datang di Mc Donal</div>
+    <div>Daftar Menu</div>
   </div>
 </template>
 
@@ -9,7 +9,7 @@
 export default {
   name: 'HomeView',
   components: {
-    
+
   }
 }
 </script>
