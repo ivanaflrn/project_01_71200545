@@ -1,26 +1,48 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="sidebar">
+    <h1>Daftar Menu</h1>
+    <ul>
+      <li><router-link to="/makanan">Makanan</router-link></li>
+      <li><router-link to="/minuman">Minuman</router-link></li>
+      <li><router-link to="/snack">Snack</router-link></li>
+    </ul>
+  </div>
+
+  <router-view/>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
 <style>
+.sidebar{
+  background-color: firebrick;
+  padding: 30px;
+  margin-right: 30px;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+}
+
+ul {
+  padding: 30px;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  margin-bottom: 15px;
+}
+
+ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+ul li a.router-link-exact-active {
+  color: #42b983;
+  text-decoration: underline;
 }
 </style>
