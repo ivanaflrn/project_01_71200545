@@ -34,7 +34,7 @@
     
   }
   .opsiGigaMac{
-    margin-left: 30pxx;
+    margin-left: 30px;
     margin-right: 300px;
 
   }
